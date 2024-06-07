@@ -44,7 +44,9 @@ public class QuanLyDongVat {
         
         for (int i = 0; i < arrLst.size(); i++) {
             if (arrLst.get(i).getTen().equals(ten)) {
-                xuat();
+                System.out.println("Ten: " + arrLst.get(i).getTen());
+                System.out.println("Can nang: " + arrLst.get(i).getCanNang());
+                System.out.println("Gioi tinh: " + arrLst.get(i).getGioiTinh());
             }
             else {
                 System.out.println("Khong co");
@@ -61,7 +63,9 @@ public class QuanLyDongVat {
         
         for (int i = 0; i < arrLst.size(); i++) {
             if (arrLst.get(i).getCanNang() >= tu && arrLst.get(i).getCanNang() <= den) {
-                xuat();
+                System.out.println("Ten: " + arrLst.get(i).getTen());
+                System.out.println("Can nang: " + arrLst.get(i).getCanNang());
+                System.out.println("Gioi tinh: " + arrLst.get(i).getGioiTinh());
             }
             else {
                 System.out.println("Khong co");
@@ -71,7 +75,9 @@ public class QuanLyDongVat {
     
     public static void taoThuCung() {
         ThuCung tc = new ThuCung("cho1", "cho", 2, 1);
-        xuat();
+        System.out.println("Ten: " + tc.getTen());
+        System.out.println("Can nang: " + tc.getCanNang());
+        System.out.println("Gioi tinh: " + tc.getGioiTinh());
         System.out.println("Ma thu cung: " + tc.maThuCung);
     }
 }
